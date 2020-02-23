@@ -45,7 +45,7 @@ head(activity_sum)
 library(ggplot2)
 
 plot1 <- ggplot(data = activity_sum, aes(Total_steps)) +
-  geom_histogram(bins = 50) + ylab("frequency")
+  geom_histogram(bins = 50) + ylab("Frequency")
 print(plot1)
 ```
 
@@ -53,7 +53,7 @@ print(plot1)
 ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 ```
 
-![](Figures/plot1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ### 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -95,7 +95,7 @@ plot2 <- ggplot(data = act_int_mean, aes(Interval, Avg_steps)) +
 print(plot2)
 ```
 
-![](Figures/plot2.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -193,7 +193,7 @@ plot3 <- ggplot(data = activity2_sum, aes(Total_steps)) + geom_histogram(bins = 
 print(plot3)
 ```
 
-![](Figures/plot3.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 Below is plot1 again:
 
@@ -206,7 +206,7 @@ print(plot1 + ggtitle("Original Data"))
 ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 ```
 
-![](Figures/plot1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 Although filling missing data increased total steps per day overall, trend of distribution was not changed between the two plots. 
 
@@ -301,7 +301,7 @@ plot4 <- ggplot(act_int_mean2, aes(Interval, Avg_steps)) + geom_line() + facet_g
 print(plot4)
 ```
 
-![](Figures/plot4.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 Steps on weekends are more evenly distributed during the day than the weekday, 
 
